@@ -1,10 +1,21 @@
-//--------Basic Pseudo-Code Steps for My Game--------//
-// 1. Start Screen - Welcome Message and Game Instructions
-// 2. Create a Character (function to createCharacter())
-//		2a. Create a Binary "save" file for progress
-// 3. Describe Starting Environment
-// 4. Save/Load throughout the "mission"
-// 5. Exit Game
+#include<iostream>
+using namespace std;
+
+int displayMainMenu() {
+	int choice;
+	cout << "Imagination Adventure: A Text Based Journey\n";
+	cout << "1. Start New Game\n";
+	cout << "2. How to Play\n";
+	cout << "3. Quit\n";
+	cin >> choice;
+	clearInput();
+	return choice;
+}
+
+void clearInput() {
+	cin.clear();
+	cin.ignore();
+}
 
 
 

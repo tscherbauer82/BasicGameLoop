@@ -128,6 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BasicGameLoop.cpp" />
+    <ClCompile Include="CreateCharacter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Plan %28Pseudo Code%29.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CreateCharacter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
