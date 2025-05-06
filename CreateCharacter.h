@@ -14,12 +14,17 @@ private:
 public:
 	createCharacter(string n, int heal, int str, int def);
 
-	int attack();
-	int damage();
-	int healthLost();
+	void setName(string n);
+	void setAttributes(int heal, int str, int def);
 
-	string getName();
-	int getHealth();
+	void generateRandomStats();
 
+	string getName() const;
+	int getHealth() const;
+	int getStrength() const;
+	int getDefense() const;
+
+	void printStats() const;
 };
+
 #endif
