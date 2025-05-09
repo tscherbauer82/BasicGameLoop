@@ -1,5 +1,14 @@
-#include<iostream>
+#include <iostream>
+#include <string>
+#include "Character.h"
+#include "Creature.h"
+
 using namespace std;
+
+void clearInput() {
+	cin.clear();
+	cin.ignore(500, '\n');
+}
 
 int displayMainMenu() {
 	int choice;
@@ -12,10 +21,24 @@ int displayMainMenu() {
 	return choice;
 }
 
-void clearInput() {
-	cin.clear();
-	cin.ignore();
+int main() {
+	int choice;
+	do {
+		choice = displayMainMenu();
+		switch (choice) {
+		case 1:
+			createCharacter();
+			break;
+		case 2:
+			cout << "How to Play" << endl;
+			cout << "Input your commands to journey through the adventure.\n";
+			cout << "Start by creating your character";
+			break;
+		case 3:
+			cout << "Quit Game" << endl;
+			break;
+			}
+	} while (choice != 3);
+	return 0;
 }
-
-
 
